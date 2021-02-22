@@ -1,57 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-<link href="./style.css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/602f49c446.js" crossorigin="anonymous"></script>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/602f49c446.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
+<body>
 
-<main id="main">
+  <main id="main">
 
 
-  <header id="header" class="elements-sections">
-    <div id="header-div">
+    <header id="header" class="elements-sections">
+      <div id="header-div">
 
-      <div id="logo-div">
-        <figure id="logo">
-          <img src="https://github.com/juTelles/product-landind-page/blob/master/img/mysheet-logo-BF436A.png?raw=true" alt="" id="header-img">
-        </figure>
-        <p id="logo-title">MySheet<p>
+        <div id="logo-div">
+          <figure id="logo">
+            <img src="https://github.com/juTelles/product-landind-page/blob/master/img/mysheet-logo-BF436A.png?raw=true"
+              alt="" id="header-img">
+          </figure>
+          <p id="logo-title">MySheet
+          <p>
+        </div>
+        <nav id="nav-bar">
+          <div id="menu-button" onclick="dropdownMenu()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </div>
+          <div id="nav-links">
+            <a href="#about" id="nav-link" class="nav-link" onclick="dropdownMenu()">HOME</a>
+            <a href="#watch" id="nav-link" class="nav-link" onclick="dropdownMenu()">VIDEO</a>
+            <a href="#price" id="nav-link" class="nav-link" onclick="dropdownMenu()">PRICE</a>
+            <a href="#contact" id="nav-link" onclick="dropdownMenu()">CONTACT</a>
+          </div>
+        </nav>
+
       </div>
-      <nav id="nav-bar">
-        <div id="menu-button" onclick="dropdownMenu()">
-          <div class="menu-line"></div>
-          <div class="menu-line"></div>
-          <div class="menu-line"></div>
-        </div>
-        <div id="nav-links">
-          <a href="#about" id="nav-link" class="nav-link" onclick="dropdownMenu()">HOME</a>
-          <a href="#watch" id="nav-link" class="nav-link"  onclick="dropdownMenu()">VIDEO</a>
-          <a href="#price" id="nav-link" class="nav-link"  onclick="dropdownMenu()">PRICE</a>
-          <a href="#contact" id="nav-link" onclick="dropdownMenu()">CONTACT</a>
-        </div>
-      </nav>
+    </header>
 
-    </div>
-  </header>
-
-  <section id="about" class="elements-sections">
-    <div id="about-div" class="cards divs-sections">
+    <section id="about" class="elements-sections">
+      <div id="about-div" class="cards divs-sections">
 
         <div id="title-div" class="card">
           <h1>Tired of repetitive tasks? our
-          <span id="different-font"> customized spreadsheets</span> can handle it.</h1>
+            <span id="different-font"> customized spreadsheets</span> can handle it.</h1>
         </div>
 
         <div id="img-icons" class="card">
           <figure class="img-icon">
-            <img id="google-icon" src="https://img.icons8.com/color/48/000000/google-sheets.png"/>
+            <img id="google-icon" src="https://img.icons8.com/color/48/000000/google-sheets.png" />
           </figure>
           <figure class="img-icon">
-            <img id="excel-icon" src="https://img.icons8.com/fluent/48/000000/microsoft-excel-2019.png"/>
+            <img id="excel-icon" src="https://img.icons8.com/fluent/48/000000/microsoft-excel-2019.png" />
           </figure>
-           <p>Google or Excel? <br/>Choose your favorite</p>
+          <p>Google or Excel? <br />Choose your favorite</p>
         </div>
 
         <div class="tasks card">
@@ -78,67 +86,76 @@
         <h3>Watch</h3>
 
         <div id="video-div">
-            <iframe id="video" width="560" height="349" src="https://www.youtube.com/embed/6ZwqF55g6Ww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="video" width="560" height="349" src="https://www.youtube.com/embed/6ZwqF55g6Ww" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div id="description">
           <h4>Watch one of our customized spreadsheets in action.</h4>
-          <p>This video shows a customized spreadsheet made for a Brazilian client. He is an independent driver contractor and needed help organizing and registering his business travels, payments, taxes and all sorts of little details.</p>
-         </div>
-
-      </div>
-  </section>
-
-  <section id="price" class="elements-sections">
-    <div id="price-div" class="divs-sections">
-
-      <h3>Pricing</h3>
-
-      <div class="price-card">
-        <p class="price">Chose a ready to go template from our amazing template gallery<br/>starting at $10</p>
-      </div>
-
-      <div id="or-div">
-      <p id="or">OR</p>
-      </div>
-
-      <div class="price-card">
-        <p class="price">Contact us so we can discuss a fair budget for your unique, customized spreadsheet</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contact" class="elements-sections">
-    <div id="contact-div" class="divs-sections">
-
-      <h3>Contact Us</h3>
-
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <label for="email" id="email-label">Email
-          <input type="email" name="email" placeholder="Your@email.com" id="email" required>
-        </label>
-        <label for="textarea">Tell us what you need...
-          <textarea name="textarea" id="textarea" rows="5">Write in here...</textarea>
-        </label>
-        <div id="button">
-          <input type="submit" id="submit" value="Submit"/>
+          <p>This video shows a customized spreadsheet made for a Brazilian client. He is an independent driver
+            contractor
+            and needed help organizing and registering his business travels, payments, taxes and all sorts of little
+            details.</p>
         </div>
-      </form>
-    </div>
 
-  </section>
+      </div>
+    </section>
 
-  <footer id="copyright" class="elements-sections">
-    <div id=copyright-div>
+    <section id="price" class="elements-sections">
+      <div id="price-div" class="divs-sections">
 
-      <h4 id="my-copy">Juliana Biasoto | Copyright</h4>
-      <p id="icons-copy">
-        <a href="https://icons8.com/icon/30461/google-sheets">Google Sheets </a>
+        <h3>Pricing</h3>
+
+        <div class="price-card">
+          <p class="price">Chose a ready to go template from our amazing template gallery<br />starting at $10</p>
+        </div>
+
+        <div id="or-div">
+          <p id="or">OR</p>
+        </div>
+
+        <div class="price-card">
+          <p class="price">Contact us so we can discuss a fair budget for your unique, customized spreadsheet</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="elements-sections">
+      <div id="contact-div" class="divs-sections">
+
+        <h3>Contact Us</h3>
+
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <label for="email" id="email-label">Email
+            <input type="email" name="email" placeholder="Your@email.com" id="email" required>
+          </label>
+          <label for="textarea">Tell us what you need...
+            <textarea name="textarea" id="textarea" rows="5">Write in here...</textarea>
+          </label>
+          <div id="button">
+            <input type="submit" id="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+    <footer id="copyright" class="elements-sections">
+      <div id=copyright-div>
+
+        <h4 id="my-copy">Juliana Biasoto | Copyright</h4>
+        <p id="icons-copy">
+          <a href="https://icons8.com/icon/30461/google-sheets">Google Sheets </a>
           and
-        <a href="https://icons8.com/icon/UECmBSgBOvPT/microsoft-excel-2019">Microsoft Excel 2019</a>
+          <a href="https://icons8.com/icon/UECmBSgBOvPT/microsoft-excel-2019">Microsoft Excel 2019</a>
           icons by Icons8
-      </p>
+        </p>
 
-    </div>
-  </footer>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
