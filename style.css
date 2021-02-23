@@ -117,18 +117,7 @@ nav {
   border: white solid 1px;
   margin: 5px 0;
 }
-#nav-links-mobile {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  flex-flow: column;
-  position: absolute;
-  background-color: #bf436a;
-  right: 1px;
-  top: 60px;
-  display: none;
-  z-index: 1;
-}
-#nav-links {
+#nav-links, #nav-links-mobile {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   flex-flow: column;
@@ -151,8 +140,8 @@ nav {
   border-top: white solid 1px;
   margin: 0px;
 }
-#nav-links a:active,
-#nav-links a:hover {
+#nav-link a:active,
+#nav-link a:hover {
   background-color: #ff739f;
 }
 
