@@ -2,7 +2,6 @@ const dropdownMenu = () => {
   const navLinksMobile = document.getElementById("nav-links-mobile");
   const menuButton = document.getElementById("menu-button");
   const mobileWindow = window.matchMedia("(max-width: 1175px)").matches
-  const desktopWindow = window.matchMedia("(min-width: 1175px)").matches
   const navLinksMobileDisplay = navLinksMobile.style.display
 
   if (mobileWindow && (navLinksMobileDisplay === 'none' || navLinksMobileDisplay === '') {
