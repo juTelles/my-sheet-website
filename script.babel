@@ -1,12 +1,15 @@
-let dropdownMenu = () => {
-  let navLinks = document.getElementById("nav-links-mobile");
-  let menuButton = document.getElementById("menu-button");
+const dropdownMenu = () => {
+  const navLinksMobile = document.getElementById("nav-links-mobile");
+  const menuButton = document.getElementById("menu-button");
+  const mobileWindow = window.matchMedia("(max-width: 1175px)").matches
+  const desktopWindow = window.matchMedia("(min-width: 1175px)").matches
+  console.log([mobileWindow, desktopWindow])
 
-  if (window.matchMedia("(max-width: 1175px)").matches && navLinks.style.display === "none") {
-    navLinks.style.display = "flex";
+  if (mobileWindow && navLinksMobile.style.display === "none") {
+    navLinksMobile.style.display = "flex";
     menuButton.style.backgroundColor = "#FF739F"
   } else {
-    navLinks.style.display ="none";
+    navLinksMobile.style.display ="none";
     menuButton.style.backgroundColor = "#BF436A"
   }
 };
