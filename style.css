@@ -117,7 +117,8 @@ nav {
   border: white solid 1px;
   margin: 5px 0;
 }
-#nav-links, #nav-links-mobile {
+#nav-links,
+#nav-links-mobile {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   flex-flow: column;
@@ -128,20 +129,15 @@ nav {
   display: none;
   z-index: 1;
 }
-#nav-links-mobile a {
-  color: white;
-  padding: 15px;
-  border-top: white solid 1px;
-  margin: 0px;
-}
+#nav-links-mobile a,
 #nav-links a {
   color: white;
   padding: 15px;
   border-top: white solid 1px;
   margin: 0px;
 }
-#nav-link a:active,
-#nav-link a:hover {
+.nav-link a:active,
+.nav-link a:hover {
   background-color: #ff739f;
 }
 
@@ -373,6 +369,9 @@ textarea {
     display: flex;
     flex-flow: row nowrap;
     position: static;
+  }
+  .nav-link #mobile {
+    display: none;
   }
   #nav-links a {
     padding: 10px;
