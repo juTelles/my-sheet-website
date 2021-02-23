@@ -136,8 +136,8 @@ nav {
   border-top: white solid 1px;
   margin: 0px;
 }
-.nav-link a:active,
-.nav-link a:hover {
+.nav-link:active,
+.nav-link:hover {
   background-color: #ff739f;
 }
 
@@ -359,19 +359,15 @@ textarea {
 }
 
 @media only screen and (min-width: 1175px) {
-  #menu-button {
-    display: none;
-  }
-  #nav-links-mobile {
+  #menu-button,
+  #nav-links-mobile,
+  #mobile {
     display: none;
   }
   #nav-links {
     display: flex;
     flex-flow: row nowrap;
     position: static;
-  }
-  #mobile {
-    display: none;
   }
   #nav-links a {
     padding: 10px;
