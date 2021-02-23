@@ -3,9 +3,9 @@ const dropdownMenu = () => {
   const menuButton = document.getElementById("menu-button");
   const mobileWindow = window.matchMedia("(max-width: 1175px)").matches
   const desktopWindow = window.matchMedia("(min-width: 1175px)").matches
-  console.log([mobileWindow, desktopWindow, navLinksMobile.style.display])
+  const navLinksMobileDisplay = navLinksMobile.style.display
 
-  if (mobileWindow && navLinksMobile.style.display === "none") {
+  if (mobileWindow && (navLinksMobileDisplay === 'none' || navLinksMobileDisplay === '') {
     navLinksMobile.style.display = "flex";
     menuButton.style.backgroundColor = "#FF739F"
   } else {
