@@ -2,7 +2,7 @@ let dropdownMenu = () => {
   let navLinks = document.getElementById("nav-links-mobile");
   let menuButton = document.getElementById("menu-button");
 
-  if (window.matchMedia("(min-width: 1175px)").matches && navLinks.style.display === "none") {
+  if (window.matchMedia("(max-width: 1175px)").matches && navLinks.style.display === "none") {
     navLinks.style.display = "flex";
     menuButton.style.backgroundColor = "#FF739F"
   } else {
