@@ -7,8 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;800;900&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/602f49c446.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
@@ -33,11 +33,17 @@
             <div class="menu-line"></div>
             <div class="menu-line"></div>
           </div>
+          <div id="nav-links-mobile">
+            <a href="#about" id="mobile" class="nav-link" onclick="dropdownMenu()">HOME</a>
+            <a href="#watch" id="mobile" class="nav-link" onclick="dropdownMenu()">VIDEO</a>
+            <a href="#price" id="mobile" class="nav-link" onclick="dropdownMenu()">PRICE</a>
+            <a href="#contact" id="mobile" class="nav-link" onclick="dropdownMenu()">CONTACT</a>
+          </div>
           <div id="nav-links">
-            <a href="#about" id="nav-link" class="nav-link" onclick="dropdownMenu()">HOME</a>
-            <a href="#watch" id="nav-link" class="nav-link" onclick="dropdownMenu()">VIDEO</a>
-            <a href="#price" id="nav-link" class="nav-link" onclick="dropdownMenu()">PRICE</a>
-            <a href="#contact" id="nav-link" onclick="dropdownMenu()">CONTACT</a>
+            <a href="#about" id="desktop" class="nav-link">HOME</a>
+            <a href="#watch" id="desktop" class="nav-link">VIDEO</a>
+            <a href="#price" id="desktop" class="nav-link">PRICE</a>
+            <a href="#contact" id="desktop" class="nav-link">CONTACT</a>
           </div>
         </nav>
 
@@ -93,9 +99,9 @@
         <div id="description">
           <h4>Watch one of our customized spreadsheets in action.</h4>
           <p>This video shows a customized spreadsheet made for a Brazilian client. He is an independent driver
-            contractor
-            and needed help organizing and registering his business travels, payments, taxes and all sorts of little
-            details.</p>
+            contractor and needed help organizing and registering his business travels, payments, taxes and all sorts of
+            little details.</p>
+>>>>>>> gh-pages
         </div>
 
       </div>
@@ -154,8 +160,9 @@
 
       </div>
     </footer>
-    <script src="./js/script.js"></script>
+  </main>
 
+  <script src="./script.babel"></script>
 </body>
 
 </html>
